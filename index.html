@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asociația Hamlesch 1309</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #b8860b;
+      --gold-light: #d4a017;
+      --cream: #f5f0e8;
+      --dark: #1a1612;
+      --mid: #3a3028;
+    }
+
+    body {
+      background-color: var(--dark);
+      color: var(--cream);
+      font-family: 'Cormorant Garamond', serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Subtle grain texture */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.5;
+    }
+
+    .container {
+      text-align: center;
+      padding: 3rem 2rem;
+      position: relative;
+      z-index: 1;
+      animation: fadeUp 1.2s ease both;
+    }
+
+    /* Decorative top ornament */
+    .ornament {
+      display: block;
+      margin: 0 auto 2rem;
+      width: 180px;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.3s both;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 1.5rem auto;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.7s both;
+    }
+
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(1.8rem, 5vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      line-height: 1.2;
+      color: var(--cream);
+      opacity: 0;
+      animation: fadeUp 1s ease 0.9s both;
+    }
+
+    h1 span {
+      color: var(--gold-light);
+    }
+
+    .tagline {
+      margin-top: 1.8rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      color: rgba(245, 240, 232, 0.55);
+      font-style: italic;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.1s both;
+    }
+
+    /* Bottom ornament line */
+    .bottom-ornament {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.3s both;
+    }
+
+    .bottom-ornament::before,
+    .bottom-ornament::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold));
+    }
+
+    .bottom-ornament::after {
+      background: linear-gradient(90deg, var(--gold), transparent);
+    }
+
+    .diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      transform: rotate(45deg);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- SVG Ornament -->
+    <svg class="ornament" viewBox="0 0 180 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="15" x2="72" y2="15" stroke="#b8860b" stroke-width="0.5"/>
+      <rect x="84" y="9" width="12" height="12" fill="none" stroke="#b8860b" stroke-width="1" transform="rotate(45 90 15)"/>
+      <line x1="108" y1="15" x2="180" y2="15" stroke="#b8860b" stroke-width="0.5"/>
+    </svg>
+
+    <div class="divider"></div>
+
+    <h1>Asociația<br /><span>Hamlesch 1309</span></h1>
+
+    <p class="tagline">Tradiție · Comunitate · Patrimoniu</p>
+
+    <div class="bottom-ornament">
+      <div class="diamond"></div>
+    </div>
+
+  </div>
+</body>
+</html>
