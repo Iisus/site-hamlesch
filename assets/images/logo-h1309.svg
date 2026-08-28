@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 520" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Hamlesch 1309 logo</title>
+  <desc id="logoDesc">Monograma H cu cerc pergament si accente botanice rosii</desc>
+
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="45%" r="58%">
+      <stop offset="0%" stop-color="#f2ece0"/>
+      <stop offset="100%" stop-color="#e3dac9"/>
+    </radialGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#18130f"/>
+      <stop offset="100%" stop-color="#0f0c0a"/>
+    </linearGradient>
+    <linearGradient id="vine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#595146"/>
+      <stop offset="100%" stop-color="#2f2a24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="360" height="520" fill="none"/>
+  <circle cx="180" cy="245" r="136" fill="url(#paper)" stroke="#d5c8b4" stroke-width="1.5"/>
+
+  <path d="M124 86 L145 86 L145 330 L124 330 Z" fill="url(#ink)"/>
+  <path d="M145 243 C186 165 286 181 277 261 C271 315 203 318 187 274 C173 237 217 201 260 216 C219 181 162 193 145 243 Z" fill="url(#ink)"/>
+
+  <path d="M74 170 C122 118 174 123 220 145" fill="none" stroke="url(#vine)" stroke-width="2"/>
+  <path d="M220 145 C247 156 266 151 289 122" fill="none" stroke="url(#vine)" stroke-width="2"/>
+
+  <path d="M154 398 C172 364 169 332 164 302" fill="none" stroke="#534b41" stroke-width="1.8"/>
+  <path d="M163 398 C183 431 192 458 199 486" fill="none" stroke="#534b41" stroke-width="1.8"/>
+
+  <text x="180" y="372" text-anchor="middle" fill="#16120f" font-family="'Cormorant Garamond', serif" font-size="66" letter-spacing="1">1309</text>
+
+  <g fill="#7d1218">
+    <ellipse cx="164" cy="472" rx="8" ry="4" transform="rotate(-24 164 472)"/>
+    <ellipse cx="176" cy="478" rx="8" ry="4" transform="rotate(-10 176 478)"/>
+    <ellipse cx="190" cy="482" rx="8" ry="4" transform="rotate(8 190 482)"/>
+    <ellipse cx="204" cy="484" rx="8" ry="4" transform="rotate(22 204 484)"/>
+    <ellipse cx="154" cy="484" rx="8" ry="4" transform="rotate(-33 154 484)"/>
+  </g>
+</svg>
